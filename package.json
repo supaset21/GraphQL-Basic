@@ -1,0 +1,26 @@
+{
+  "name": "GraphQL-Basic",
+  "version": "1.0.0",
+  "description": "This is GraphQL basic example",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supaset21/GraphQL-Basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supaset21/GraphQL-Basic/issues"
+  },
+  "homepage": "https://github.com/supaset21/GraphQL-Basic#readme"
+}
