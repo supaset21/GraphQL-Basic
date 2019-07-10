@@ -1,1 +1,5 @@
-## Example
+##GraphQL Basic use
+
+```
+npm install
+```
