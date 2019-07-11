@@ -1,0 +1,22 @@
+[{
+        "id": 1,
+        "firstName": "John",
+        "lastName": "snow",
+        "age": 20,
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "firstName": "John",
+        "lastName": "Cena",
+        "age": 39,
+        "gender": "Male"
+    },
+    {
+        "id": 3,
+        "firstName": "Lisa",
+        "lastName": "Blackpink",
+        "age": 60,
+        "gender": "Female"
+    }
+]
