@@ -2,11 +2,23 @@ const express = require("express");
 const app = express();
 
 const graphqlMiddleware = require("express-graphql");
-const { graphql, buildSchema } = require("graphql");
+const { buildSchema } = require("graphql");
 
 const customers = require("./data");
 
 const port = 3000;
+
+//REST API EXAMPLE PATH
+app.get("/customers", function(req, res) {
+  res.json(customers);
+});
+
+app.get("/customer/:id", function(req, res) {
+  let customer = customers.filter(c => c.id == req.params.id);
+  res.json(customer);
+});
+
+//GraphQL
 
 // const schema = buildSchema(`
 //   type Query {
@@ -51,10 +63,7 @@ const resolver = {
     return customers.find(c => c.id == args.id);
   },
   customers(args) {
-    console.log(args);
-
-    // let result = customers;
-    let result = [].concat(customers);
+    let result = customers;
 
     if (args.gender) {
       result = result.filter(c => c.gender == args.gender);
