@@ -4,7 +4,7 @@
   "description": "This is GraphQL basic example",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-graphql": "^0.8.0",
     "graphql": "^14.4.2",
     "nodemon": "^1.19.1"
